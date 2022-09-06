@@ -32,4 +32,4 @@ var swDetecter = exports.swDetecter = function swDetecter() {
 
 },{}]},{},[1]);
 
-//# sourceMappingURL=scripts-min.js.map
+//# sourceMappingURL=scripts.js.map
