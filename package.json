@@ -1,9 +1,9 @@
 {
-	"name": "gulp-boilerplate-web",
+	"name": "razrcasinotest",
 	"version": "1.0.0",
 	"description": "Simple scafolding for statics web projects",
 	"main": "gulpfile.babel.js",
-	"homepage": "https://kikeestrada.github.io/gulp-boilerplate-web/",
+	"homepage": "https://kikeestrada.github.io/razrcasinotest/",
 	"scripts": {
 		"start": "gulp",
 		"pug": "gulp pug",
