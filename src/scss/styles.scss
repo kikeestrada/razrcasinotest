@@ -1,43 +1,17 @@
-// Reset
+// Libraries
+@import "libraries/libraries";
 
-:root {
-	--main-font			: 'Raleway';
-	--alternate-font	: sans-serif;
-	--font-size 		: 16px; 
-	--line-height 		: 1.6;  
-	--main-color 		: #007BDF;
-	--second-color 		: #fff;	
-	--text-color 		: #000;
-	--bg-color 			: #eee;
-  }
+// Config
+@import "config/config";
 
-/* ********** Reset ********** */
-html {
-	box-sizing 			: border-box;
-	font-family 		: var(--main-font), var(--alternate-font);
-	font-size 			: var(--font-size);
-	line-height 		: var(--line-height);
-	color 				: var(--text-color);
-	background			: var(--bg-color);
-  }
-   
-  *,
-  *:after,
-  *:before {
-	box-sizing 			: inherit;
-	padding 			: 0;
-	margin 				: 0;
-  }
+// LAYOUT
+// Escribe solo los estilos de layout (division en regiones del viewport)
+@import "layout/layout"; 
 
-  body { overflow-x		: hidden; }
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+@import "components/components";
 
-  img {
-	max-width 			: 100%;
-	width 				: 100%;
-	height 				: auto;
-  }
-  
-  ::selection {
-	background-color 	: var(--main-color);
-	color 				: var(--second-color);
-  }
+// Utilities (hacks)
+// Todos los hacks que hayas necesitado para solucionar conflictos
+// o resolver situaciones extremas. Se espera poder mejorarlos luego.
+@import "hacks/hacks";  

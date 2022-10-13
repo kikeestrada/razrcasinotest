@@ -8,12 +8,13 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 	<!--[if IE 8]><html class="no-js lt-ie9" lang=""> <![endif]-->
 	<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 	head
-		include utilis/metatags 
-		link(rel="stylesheet" href="assets/css/styles.css")
+		include utilis/metatags  
+		link(rel="stylesheet" href="assets/styles.css")
 		title= currentPage.slice(0,1).toUpperCase() + currentPage.slice(1) + " | " + siteName
 	body(class=currentPage, itemscope itemtype="http://schema.org/WebPage")
 		//- here start the Main Header
 		header(class='main-header')
+			include ../components/top-nav
 			block main-header
 		//- here ends the Main Header
 		//- here start the Main Container
@@ -24,5 +25,7 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		footer(class='main-footer')
 			block main-footer
 		//- here ends the Main Footer
-		script(src="assets/js/scripts-min.js")
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+		<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+		script(src="assets/scripts-min.js")
 		block scripts

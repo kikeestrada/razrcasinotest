@@ -1,0 +1,21 @@
+mixin mixin_homearticle(className,icon, title,image, subtitle, copy, url, cta)  
+	article(class=`block-article` + ` ` + `${className}`)
+		div
+			img(src=icon class='block-article__icon')
+			h2( class='block-article__title')=title  
+		img(src=image  class='block-article__image')   
+		h2( class='block-article__subtitle')=subtitle
+		p( class='block-article__copy')=copy 
+		a(href=url class='block-article__cta')=cta 
+div(class="ed-grid rows-gap s-grid-1 m-grid-2")
+	-for (let i = 0; i < obj_home_articles.length; i++) 
+		-let obj_home_article = obj_home_articles[i] 
+		+mixin_homearticle(
+			obj_home_article.className, 
+			obj_home_article.icon, 
+			obj_home_article.title, 
+			obj_home_article.image, 
+			obj_home_article.subtitle, 
+			obj_home_article.copy, 
+			obj_home_article.url, 
+			obj_home_article.cta)

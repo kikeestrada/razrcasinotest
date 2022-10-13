@@ -1,0 +1,83 @@
+.tns-outer{
+    position                : relative;
+    .tns-controls{ 
+      position              : absolute;
+      z-index               : 1;
+      width                 : 100%;
+      top                   : 50%;
+      > button {
+        position            : absolute;
+        transform           : translateY(-50%);
+        z-index             : 100;
+        background-color    : transparent;
+        border              : 0;
+        color               : #FFF;
+        font-size           : 24px;
+        opacity             : 0.8;
+        transition          : opacity .3s ease;
+      }
+      > button:hover        { opacity : 0.3;  }
+      > button:focus        { outline : 0;    }
+      > button:first-child  { left    : 10px; }
+      > button:last-child   { right   : 10px; }
+    }
+    .tns-nav {
+      position              : absolute;
+      z-index               : 1;
+      width                 : 100%;
+      bottom                : 0;
+      text-align            : center;
+      margin                : 10px 0;
+      [aria-controls] {
+        width               : 9px;
+        height              : 9px;
+        padding             : 0;
+        margin              : 0 5px;
+        border-radius       : 50%;
+        background          : #ddd;
+        border              : 0;
+      }
+      > .tns-nav-active     { background: #999; }
+      &__nav-controls{
+        position            : absolute;
+        width               : 100%;
+        text-align          : center;
+        margin              : 10px 0;
+        bottom              : 0;
+        z-index             : 1000;
+        [aria-controls] {
+          width             : 20px;
+          height            : 20px;
+          background        : #717171;
+          text-align        : center;
+          color             : transparent;
+          border-radius     : 20px;
+          border            : 1px #aaa solid;
+          position          : relative;
+          transition        : all .25s;
+          padding           : 0;
+          margin            : 0 10px;
+          cursor            : pointer;
+          outline           : 0;
+          &:before{
+            content         : "";
+            display         : block;
+            position        : absolute;
+            width           : 18px;
+            height          : 18px;
+            background-color: transparent;
+            border          : 2px solid transparent;
+            border-radius   : 20px;
+            left            : 0;
+            top             : 0;
+          } 
+        }
+        [aria-selected="true"] {
+          background-color  :transparent;
+          &:before{
+            border-color    : #fff;
+          }
+        }
+      }
+    }
+  }

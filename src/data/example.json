@@ -1,21 +1,51 @@
 {
-	"casos":
-		[
-			{
-				"img": "assets/img1.jpg",
-				"title": "Company 1"
-			},
-			{
-				"img": "assets/img2.jpg",
-				"title": "Company"
-			},
-			{ 
-				"img": "assets/img3.jpg",
-				"title": "Company"
-			},
-			{
-				"img": "assets/img4.jpg",
-				"title": "Company"
-			}
-		]
+	"obj_home_articles":
+	[
+		{
+			"className" : "m-cols-2",
+			"icon" : "https://razrcasino.com/wp-content/uploads/2022/09/icon-casino-2.svg",
+			"title" : "Title",
+			"image" : "https://razrcasino.com/wp-content/uploads/2022/09/slider-sports.jpg",
+			"subtitle" : "sub title",
+			"copy" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+			"url" : "https://www.google.com/",
+			"cta" : "cta"
+		},
+		{
+			"className" : "m-cols-2",
+			"icon" : "https://razrcasino.com/wp-content/uploads/2022/09/icon-casino-2.svg",
+			"title" : "Title",
+			"image" : "https://razrcasino.com/wp-content/uploads/2022/09/slider-sports.jpg",
+			"subtitle" : "sub title",
+			"copy" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+			"url" : "https://www.google.com/",
+			"cta" : "cta"
+		},
+		{
+			"className" : "m-rows-2",
+			"icon" : "https://razrcasino.com/wp-content/uploads/2022/09/icon-casino-2.svg",
+			"title" : "Title",
+			"image" : "https://razrcasino.com/wp-content/uploads/2022/09/slider-casino.jpg",
+			"subtitle" : "sub title",
+			"copy" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+			"url" : "https://www.google.com/",
+			"cta" : "cta"
+		},
+		{
+			"className" : "m-rows-2",
+			"icon" : "https://razrcasino.com/wp-content/uploads/2022/09/icon-casino-2.svg",
+			"title" : "Title",
+			"image" : "https://razrcasino.com/wp-content/uploads/2022/09/slider-casino.jpg",
+			"subtitle" : "sub title",
+			"copy" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+			"url" : "https://www.google.com/",
+			"cta" : "cta"
+		}
+	],
+	"obj_promotions":
+	[
+		{
+			
+		}
+	]
 }

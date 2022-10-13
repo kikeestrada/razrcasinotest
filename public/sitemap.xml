@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://kikeestrada.github.io/gulp-boilerplate/casino.html</loc>
+        <lastmod>2022-10-13T21:40:13.742Z</lastmod>
+    </url>
+    <url>
         <loc>https://kikeestrada.github.io/gulp-boilerplate/</loc>
-        <lastmod>2022-09-06T17:47:41.644Z</lastmod>
+        <lastmod>2022-10-13T21:40:13.821Z</lastmod>
+    </url>
+    <url>
+        <loc>https://kikeestrada.github.io/gulp-boilerplate/livebetting.html</loc>
+        <lastmod>2022-10-11T21:51:24.068Z</lastmod>
+    </url>
+    <url>
+        <loc>https://kikeestrada.github.io/gulp-boilerplate/promotions.html</loc>
+        <lastmod>2022-10-13T21:40:13.822Z</lastmod>
+    </url>
+    <url>
+        <loc>https://kikeestrada.github.io/gulp-boilerplate/racebook.html</loc>
+        <lastmod>2022-10-13T21:40:13.822Z</lastmod>
+    </url>
+    <url>
+        <loc>https://kikeestrada.github.io/gulp-boilerplate/sports.html</loc>
+        <lastmod>2022-10-13T21:40:13.823Z</lastmod>
     </url>
 </urlset>

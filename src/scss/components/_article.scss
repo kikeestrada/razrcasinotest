@@ -1,0 +1,33 @@
+.block-article{
+	&__icon{
+		width: 30px;
+		height: auto;
+		float: left;
+		margin-right: 10px;
+	}
+	&__title{
+		color:white;
+	}
+	&__img{}
+	&__subtitle{
+		color: #13EAA8;
+	}
+	&__copy{
+		color: white;
+	}
+	&__cta{
+		
+		background: linear-gradient(180deg, #30BD92 6.25%, #41A99C 30.21%, #5F88AE 54.69%, #6F76B8 78.39%, #8063C1 100%), linear-gradient(0deg, #4FFFC9, #4FFFC9);
+		border: 1px solid #4FFFC9;
+		border-radius: 5px;
+		color: #FFFFFF;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 17px;
+		text-transform: uppercase;
+		max-width: 300px;
+		height: 42px;
+		display: block;
+		text-align: center;
+	}
+}

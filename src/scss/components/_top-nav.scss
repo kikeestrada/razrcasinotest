@@ -1,0 +1,98 @@
+.top-nav{
+	// border-bottom 	: 1px solid #DFE0E0;
+	background    	: #271d3b;
+	position      	: fixed;
+	top           	: 0;
+	width         	: 100%;
+	left          	: 0;
+	display 		: flex;
+	justify-content : center;
+	z-index: 1;
+
+	&__container{
+		display 		: flex;
+		justify-content : space-between;
+		height        	: var(--header-height);
+		width: 100%;
+		max-width: 1200px;
+		padding: 0 15px;
+	}
+
+	&__link{
+		align-self: center;
+	}
+	&__logo{
+		height: 2rem;
+		width: auto;
+		display: block;
+		@include from(l){
+			height: 3rem;
+		}
+	}
+	&__menu{
+		@include fromTo(s,l){
+			position 		: fixed;
+			padding 		: 0 10px;
+			height 			: 100vh;
+			width 			: 260px;
+			background 		: #271D3B;
+			transition 		: left .5s;
+			overflow-y 		: auto;
+			// border-top 		: 1px solid #DFE0E0;
+			// border-left 	: 1px solid #DFE0E0;
+			top 			: var(--header-height);
+			left 			: -260px;
+			&.show-top-nav {
+				left 		: 0;
+			}
+		}
+		@include from(l){
+			align-self: center;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&__li{
+		@include fromTo(s,l){
+			display: block;
+			// border-bottom: 1px solid #DFE0E0;
+			padding: 10px 0;
+			margin: 0;
+
+		}
+		margin-left: 1em;
+		list-style-type: none;
+		display: inline-block;
+	}
+	&__anchor{
+		color: white;
+	}
+
+	&__mb-iconMenu {
+		position: relative;
+		align-self: center;
+		top: 3px;
+		padding: 0;
+		span{
+			&.hamburger-inner{
+				background: white;
+				&::after{}
+				&::before{}
+				&::after, &::before{
+					background: white;
+				}
+			}
+		}
+		&:focus {
+			outline: 0 !important;
+			-moz-outline-style: none !important;
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+		@include from(l){
+			display: none;
+		}
+	}
+
+}

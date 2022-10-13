@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: white;
+	background: #00CBFF;
+}
+
+strong {
+	font-weight 	: 700;
+}
+
+body {
+	margin         	: var(--header-height) 0 0 0;
+	min-height     	: calc(100vh - var(--header-height));
+	background 		: #382B54 ;
+	display        	: flex;
+	flex-direction 	: column;
+}
+
+.main-header{}
+.main-container{}
+.main-footer {
+	background 		: $color-first;
+	color      		: #FFF;
+	padding    		: 2rem 0;
+	font-size  		: fontSize(small);
+	margin-top 		: auto;
+}

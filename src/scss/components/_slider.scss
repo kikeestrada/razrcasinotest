@@ -1,0 +1,23 @@
+.tns-single{
+	& > div:nth-child(odd){
+		background			:red;
+	}
+	& > div:nth-child(even){
+		background			:green;
+	}
+	&__content{
+		position 			: relative;
+		height				: auto;
+		background			: transparent;
+		display				: flex;
+		justify-content		: center;
+		flex-direction		: column;
+		align-items			: center;
+		span{color			: white;}
+		img{
+			width 			: 100%;
+			height 			: auto;
+			
+		}
+	}
+}
